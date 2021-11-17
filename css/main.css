@@ -44,9 +44,10 @@ li{
     justify-content:center;
     flex-direction:column;
     position:absolute;
-    top:80vh;
+    top:81vh;
     left:0;
     right:0;
+    border-top:solid 2px ;
 }
 
 .sm-navigation-list li{
