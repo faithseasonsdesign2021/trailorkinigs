@@ -1,0 +1,576 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/*coding for the top landing section start here*/
+.landing-section{
+    min-height:70vh;
+    background:url("../images/mainImage.JPG");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+/*coding for the top landing section ended here*/
+
+/*coding for the navigation bar start here*/
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+.lg-navigation-bar,.sm-navigation-bar{
+    height:80px;
+    background-color:#E0E0E0;
+}
+.sm-navigation-list{
+    background-color:#E0E0E0;
+}
+.sm-navigation-bar{
+    flex-direction:row;
+}
+.logo-wrapper{
+    flex:5;
+}
+.button-wrapper{
+    flex:1;
+}
+.sm-navigation-list{
+    height:50vh;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    position:absolute;
+    top:80vh;
+    left:0;
+    right:0;
+}
+
+.sm-navigation-list li{
+    margin-top:20px;
+}
+.sm-navigation-list-wrapper{
+    display:none;
+}
+
+.displayNavigation{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:767px){
+    .sm-navigation-list li{
+        font-size:12pt;
+        font-weight:bold;
+    }
+    .sm-navigation-list{
+        height:80vh !important;
+    }
+}
+@media screen and (max-width:180px){
+    .sm-navigation-bar{
+        flex-direction:column;
+        padding:10px 0px 10px 0px;
+        height:100px;
+    }
+    .logo-wrapper, .button-wrapper{
+        justify-content:center;
+    }
+
+}
+@media screen and (min-width:768px)
+and (max-width:987px){
+    .lg-navigation-bar li{
+        font-size:10pt;
+        font-weight:bold;
+    }
+    .nav-links-two{
+        font-size:5pt !important;
+    }
+}
+@media screen and (min-width:768px)
+and (max-width:1387px){
+    .nav-links-two{
+        font-size:10pt !important;
+    }
+}
+/*coding for the navigaion bar ended here*/
+
+
+/*main content coding start here*/
+.main-section{
+    display:flex;
+    column-gap:20px;
+}
+.left{
+    display:flex;
+    flex-direction:column;
+    flex:2;
+}
+.right{
+    display:flex;
+    flex:1;
+}
+.card-body{
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    border:none;
+}
+@media screen and (max-width:767px){
+    .main-section{
+        flex-direction:column;
+        row-gap:20px;
+    }
+    .main-description{
+        font-size:14pt;
+    }
+    .location-sub-caption{
+        font-size:12pt;
+        font-weight:400;
+        color:black;
+    }
+}
+/*main content coding ended here*/
+
+/*coding for footer section start here*/
+.footer-nav li{
+    display:inline-block;
+}
+.footer-section{
+    padding-bottom:50px;
+}
+/*coding for the footer section ended here*/
+
+/*coding for the second navigaion start here*/
+.lg-nav-two-wrapper{
+    display:flex;
+    align-items:center;
+    margin-top:50px;
+    padding-left:150px;
+    padding-right:150px;
+    height:100px;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+.lg-nav-two{
+    background-color:#e0e0e0;
+    height:80px;
+    display:flex;
+    align-items:center;
+}
+div div.scrollmenu {
+    background-color:#e0e0e0;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+  .scrollmenu-wrapper{
+      margin-top:20px;
+  }
+/*coding for the second navigation ended here*/
+
+
+
+/*brand page section coding start here*/
+
+.brand-section{
+  margin-top:20px;
+  padding-bottom:80px;
+}
+.brand-section .card-body{
+  padding:50px;
+}
+.brand-logo-wrapper{
+  text-align:center;
+  margin-top:70px;
+}
+
+@media screen and (max-width:767px){
+  .brand-logo-wrapper{
+    margin-top:40px;
+  }
+  .brand-logo{
+    height:50px;
+  }
+}
+/*brand page section coding ended here*/
+
+
+/*coding for our people page start here*/
+.people-section{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.people-cards-wrapper{
+  display:flex;
+  column-gap:20px;
+  justify-content:center;
+  margin-top:60px;
+}
+.person-name{
+  margin-top:20px;
+}
+.people-card-item{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:30px;
+}
+
+.management-wrapper{
+  margin-top:60px;
+}
+
+
+@media screen and (max-width:767px){
+  .people-cols{
+    margin-top:20px;
+  }
+  .people-cards-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }
+}
+/*coding for our people page ended here*/
+
+
+/*coding for our suppliers page start here*/
+.suppliers-section{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.suppliers-cards-wrapper{
+  display:flex;
+  column-gap:20px;
+  justify-content:center;
+  margin-top:30px;
+}
+.steel-wrapper{
+  margin-top:30px;
+}
+
+@media screen and (max-width:767px){
+   .suppliers-cards-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }
+}
+/*coding for our suppliers page ended here*/
+
+/*coding for contact page start here*/
+.contact-section{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.contact-cards-wrapper{
+  display:flex;
+  column-gap:20px;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.contact-card-item{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:40px;
+}
+
+.address-caption{
+  line-height:40px;
+}
+
+@media screen and (max-width:767px){
+   .contact-cards-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }
+  .fa-phone,.fa-fax,.fa-envelope-open-text{
+    font-size:20pt !important;
+  }
+}
+/*coding for contact page ended here*/
+
+
+/*coding for product pages start here*/
+.product-list-wrapper{
+  padding:10px;
+  background-color:lightblue;
+}
+.product-section-wrapper{
+  margin-top:20px;
+}
+.products-wrapper{
+  margin-top:60px;
+  padding-bottom:60px;
+}
+.product-description-caption{
+  font-size:12pt;
+}
+
+@media screen and (max-width:300px){
+  .product-list-wrapper{
+    width:150px;
+    padding:10px;
+  }
+}
+/*coding for product pages ended here*/
+
+
+
+/*coding for the platforms page start here*/
+.platform-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.platform-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.platform-left,.platform-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.platform-right{
+  display:flex;
+  align-items:center;
+}
+
+@media screen and (max-width:767px){
+  .platform-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }
+  .platform-left,.platform-right{
+    padding:20px;
+  }
+}
+/*coding for the platforms page ended here*/
+
+
+
+/*coding for skeletals page start here*/
+.skeletals-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.skeletals-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.skeletals-left,.skeletals-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.skeletals-left{
+  display:flex;
+  flex:2;
+  flex-direction:column;
+  justify-content:center;
+}
+.skeletals-right{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+@media screen and (max-width:767px){
+  .skeletals-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*coding for skeletals page ended here*/
+
+
+/*coding for tippers page start here*/
+.tippers-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.tippers-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.tippers-left,.tippers-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.tippers-left{
+  flex:2;
+}
+.tippers-right{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+@media screen and (max-width:767px){
+  .tippers-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*coding for tippers page ended here*/
+
+/*coding for curtainsider start here*/
+.curtainsiders-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.curtainsiders-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.curtainsiders-left,.curtainsiders-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.curtainsiders-left{
+  display:flex;
+  align-items:center;
+  flex:1;
+}
+.curtainsiders-right{
+  flex:3;
+}
+@media screen and (max-width:767px){
+  .curtainsiders-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*coding for curtainsider ended here*/
+
+
+
+/*coding for fridge page start here*/
+.fridge-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.fridge-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.fridge-left,.fridge-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.fridge-left{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+.fridge-right{
+  flex:2;
+}
+@media screen and (max-width:767px){
+  .fridge-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*coding for fridge page ended here*/
+
+/*box van trailor pages coding start here*/
+.box-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.box-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.box-left,.box-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.box-left{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+.box-right{
+  flex:2;
+}
+@media screen and (max-width:767px){
+  .box-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*box van trailor page coding ended here*/
+
+
+/*coding for lower bed start here*/
+.bed-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.bed-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.bed-left,.bed-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.bed-left{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+.bed-right{
+  flex:2;
+}
+@media screen and (max-width:767px){
+  .bed-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*coding for lower bed ended here*/
+
+
+/*coding for timber logging pages start here*/
+.timber-section-wrapper{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.timber-wrapper{
+  display:flex;
+  column-gap:20px;
+}
+.timber-left,.timber-right{
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  padding:20px;
+}
+.timber-left{
+  flex:2;
+}
+.timber-right{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+@media screen and (max-width:767px){
+  .timber-wrapper{
+    flex-direction:column;
+    row-gap:20px;
+  }  
+}
+/*coding for timber loggin page ended here*/

@@ -1,0 +1,268 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+/*landing secion coding start here*/
+
+.landing-section{
+    min-height:70vh;
+    background:url("../images/2.jpg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.mask{
+    min-height:95vh;
+    background-color:rgb(0 0 0 / 90%);
+    background-size:100%;
+    padding-top:30px;
+}
+.content-caption{
+    font-size:23pt;
+}
+.content-sub-cation{
+    font-size:50pt;
+}
+
+@media screen and (min-width:0px) and (max-width:463px){
+    .content-sub-cation{
+        font-size:26pt;
+    }
+    .content-caption{
+        font-size:18pt;
+    }
+}
+
+.custom-shape-divider-bottom-1636034108 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1636034108 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+}
+
+.custom-shape-divider-bottom-1636034108 .shape-fill {
+    fill: #ffdddd;
+}
+
+/*landing secion coding ended here*/
+
+/*navigation coding start here*/
+a{
+    text-decoration:none;
+}
+.lg-navigation-wrapper{
+    height:80px;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    height:80px;
+}
+.logo-wrapper{
+    display:flex;
+}
+.list-wrapper{
+    flex:2;
+}
+
+.sm-navigation-wrapper{
+    height:80px;
+}
+.sm-logo{
+    height:50px;
+}
+
+.navigation-list-outer-wrapper{
+    position:absolute;
+    left:0;
+    right:0;
+    top:110px;
+    height:100%;
+    text-align:center;
+    display:none;
+}
+.navigation-list-wrapper{
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.navigation-list-wrapper li{
+    margin-top:20px;
+}
+.navigation-list-outer-wrapper , .navigation-list-wrapper{
+    opacity:100%;
+}
+/*navigation coding ended here*/
+
+/*landing page section content start here*/
+.landing-page-content-section{
+    padding-top:50px;
+}
+
+.content-sub-cation{
+    font-size:46pt
+}
+.content-description-caption{
+    font-size:20pt;
+}
+
+/*landing page section content ended here*/
+
+/*coding for about section start here*/
+
+.about-section-outer-wrapper{
+    padding-top:150px;
+    padding-bottom:200px;
+}
+
+.about-section-wrapper{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:40px;
+}
+
+
+
+/*coding for about section ended here*/
+
+/*coding for services section start here*/
+.service-wrapper,.pricing-wrapper{
+    padding-top:80px !important;
+    padding-top:60px;padding-bottom:100px;
+}
+
+.services-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap:20px;
+    row-gap: 20px;
+    padding-top:20px;
+}
+.pricing-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:20px;
+    row-gap: 20px;
+    padding-top:20px;
+}
+.services-card,.pricing-card{
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+.services-images{
+    height:300px;
+}
+
+.services-caption,.pricing-caption{
+    font-size:36pt;
+}
+/*coding for services section ended here*/
+
+/*coding for appointment section start here*/
+.appointment-section-wrapper,.working-hours-wrapper{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color:#EC407A;
+}
+.appointment-section{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.gallery-section-wrapper{
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.gallery-section-wrapper .row{
+    margin-top:40px !important;
+}
+/*coding for appointment section ended here*/
+
+/*coding gor the pricing list start here*/
+.pricing-section-wrapper{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+/*coding gor the pricing list ended here*/
+
+/*coding for the footer start here*/
+.footer-wrapper{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color:#061732;
+}
+/*coding for the footer ended here*/
+
+
+/*media queries*/
+@media screen and (max-width:767px){
+    .mask,.landing-section{
+        min-height:85vh;
+    }
+    .landing-page-content-section{
+        text-align:center;
+    }
+    .about-section-wrapper{
+        display:flex;
+        flex-direction:column;
+    }
+    .about-section-outer-wrapper{
+        padding-top:100px;
+        padding-bottom:120px;
+    }
+    .box-shadow{
+        margin-top:20px;
+    }
+    .appointment-section{
+        display:flex;
+        flex-direction:column;
+        row-gap:10px;
+    }
+    .services-row,.pricing-row{
+        grid-template-columns: repeat(1,1fr);
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .services-caption,.pricing-caption{
+        font-size:28pt;
+    }
+    .working-hours-wrapper{
+        text-align:center;
+    }
+    .landing-page-content-section{
+        padding-top:10vh;
+    }
+    .content-description-caption{
+        font-size:12pt;
+    }
+    .content-sub-cation{
+        font-size:36pt;
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    .mask,.landing-section{
+        min-height:85vh;
+    }
+}
+@media screen and (min-width:768px) and (max-width:987px){
+   .about-img{
+       height:300px;
+   }
+
+}
+
+
